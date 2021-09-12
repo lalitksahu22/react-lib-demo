@@ -13,8 +13,8 @@ module.exports = (env, argV) => {
         output: {
             path: path.resolve(__dirname, 'dist'),
             library: {
-                //name: 'webpackdemo',
-                type: 'commonjs2',
+                name: 'react-lib-demo',
+                type: 'umd',
               },
             filename: isDev ? 'sf.[name].js' : 'sf.[name].[contenthash].js',
             clean: true,
